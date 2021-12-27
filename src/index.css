@@ -1,13 +1,98 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: white;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(216, 149, 209);
+  height: 90px;
+  color: white;
+  font-family: 'DotGothic16';
+  gap: 300px;
+}
+
+.nav h1 {
+  cursor: pointer;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav li {
+  font-size: 20px;
+}
+
+.nav li:hover {
+  color: blue;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#hero {
+  background: rgb(216, 149, 209);
+  height: 87.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero img {
+  width: 82vw;
+  height: 82vh;
+  margin-bottom: 40px;
+  border-radius: 50px; 
+  background-position: no-repeat bottom center/cover;
+}
+
+/* Latest albums */
+
+#latestContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87.9vh;
+  background:rgb(216, 149, 209);
+}
+
+.latestAlbum img {
+  height: 574px;
+  width: 280px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+.latestAlbum h3 {
+  color: white;
+  margin-left: 12px;
+  font-size: 30px;
+}
+
+.latestAlbum {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex-direction: column;
+  flex: .5;
+}
+
+#albumsContainer {
+  display: flex;
+}
+
